@@ -1,0 +1,12 @@
+:root {
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--very-dark-blue)
+}
