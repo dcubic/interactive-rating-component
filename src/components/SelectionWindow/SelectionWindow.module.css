@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+.background-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    width: 325px;
+    height: 365px;
+    background: linear-gradient(0deg, var(--background-color) 50%, var(--background-color-light) 100%);
+    box-sizing: border-box;
+    padding: 1.67rem 1.67rem 2rem 1.67rem;
+    border-radius: 1rem;
+}
+
+.white-font {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Overpass';
+}
+
+.header-size {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.paragraph {
+    margin-top: -0.333rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    opacity: 50%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--moderately-dark-grey);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.image-styling {
+    max-width: 100%;
+    max-height: 100%;
+    transform: translate(31.5%, 32%);
+}
+
+.selection-button {
+    background-color: var(--moderately-dark-grey);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.selection-button:hover {
+    background-color: var(--orange);
+    color: white;
+}
+
+.selected {
+    background-color: var(--light-grey);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.4rem 0;
+}
+
+.submit-button {
+    vertical-align: center;
+    background-color: var(--orange);
+    width: 100%;
+    height: 3rem;
+    border-radius: 0;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem
+}
+
+.submit-button:hover {
+    color: var(--orange);
+    background-color: white;
+}

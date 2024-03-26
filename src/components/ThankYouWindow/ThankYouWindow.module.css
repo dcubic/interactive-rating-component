@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+.background-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    width: 325px;
+    height: 365px;
+    background: linear-gradient(0deg, var(--background-color) 50%, var(--background-color-light) 100%);
+    box-sizing: border-box;
+    padding: 1.67rem 1.67rem 2rem 1.67rem;
+    border-radius: 1rem;
+}
+
+.imageStyle {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.header {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+}
+
+.resultContainer {
+    background-color: var(--moderately-dark-grey);
+    padding: 0.5rem 0.8rem 0.3rem 0.8rem;
+    border-radius: 1rem
+}
+
+.result {
+    opacity: 90%;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--orange);
+}
+
+.appreciationMessage {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    opacity: 50%;
+    color: white;
+    text-align: center;
+}
+
+.noMargin {
+    font-family: 'Overpass';
+    margin: 0;
+    padding: 0;
+}
