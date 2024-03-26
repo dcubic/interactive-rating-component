@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import './App.css'
-import SelectionWindow from './components/SelectionWindow/SelectionWindow'
-import ThankYouWindow from './components/ThankYouWindow/ThankYouWindow'
+import { useState } from "react";
+import "./App.css";
+import SelectionWindow from "./components/SelectionWindow/SelectionWindow";
+import ThankYouWindow from "./components/ThankYouWindow/ThankYouWindow";
 
 function App() {
   const [ratingState, setRatingState] = useState(undefined);
@@ -10,10 +10,23 @@ function App() {
 
   return (
     <body>
-      {hasSubmittedState ? <></> : <SelectionWindow ratingValues = {ratingValues} ratingState={ratingState} setRatingState={setRatingState} setHasSubmittedState={setHasSubmittedState}/>}
-      {!hasSubmittedState ? <></> : <ThankYouWindow ratingState={ratingState} />}
+      {hasSubmittedState ? (
+        <></>
+      ) : (
+        <SelectionWindow
+          ratingValues={ratingValues}
+          ratingState={ratingState}
+          setRatingState={setRatingState}
+          setHasSubmittedState={setHasSubmittedState}
+        />
+      )}
+      {!hasSubmittedState ? (
+        <></>
+      ) : (
+        <ThankYouWindow ratingState={ratingState} />
+      )}
     </body>
-  )
+  );
 }
 
-export default App
+export default App;
